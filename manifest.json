@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "SOVA app",
+  "version": "1.0.25",
+  "description": "SOVA app",
+  "icons": {
+    "512": "./agario_512.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["scrept.js"]
+  }]
+}
